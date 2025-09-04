@@ -6,9 +6,9 @@ RUN apt-get update && \
     ffmpeg \
     libmagickcore-6.q16-6-extra
 
-COPY ./new_entrypoint.sh /new_entrypoint.sh
+# COPY ./new_entrypoint.sh /new_entrypoint.sh
 
-COPY ./mpm_prefork.conf /etc/apache2/mods-enabled/mpm_prefork.conf
+# COPY ./mpm_prefork.conf /etc/apache2/mods-enabled/mpm_prefork.conf
 
 RUN chmod a+x /new_entrypoint.sh
 
